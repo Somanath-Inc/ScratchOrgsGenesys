@@ -1,5 +1,5 @@
 {
-  "orgName": "Demo company",
+  "orgName": "Genesys Scratch",
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi"],
   "settings": {
@@ -8,6 +8,21 @@
     },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
+    },
+    "currencySettings": {
+      "enableMultiCurrency": true
+    },
+    "enhancedNotesSettings": {
+      "enableEnhancedNotes": true
+    },
+    "emailTemplateSettings": {
+      "enableTemplateEnhancedFolderPref": true
+    },
+    "securitySettings": {
+      "enableAuditFieldsInactiveOwner": true,
+      "sessionSettings": {
+        "sessionTimeout": "TwentyFourHours"
+      }
     }
   }
 }
