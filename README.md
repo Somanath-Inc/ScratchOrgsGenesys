@@ -29,4 +29,4 @@ Run:
 
  Successfully set the password "*********" for user \<username\>.
 
- You can see the password again by running "sfdx force:user:display -u \<username\>"
+ You can see the password again by running `sfdx force:user:display -u \<username\>`
