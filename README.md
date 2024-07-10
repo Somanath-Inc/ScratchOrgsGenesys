@@ -13,20 +13,20 @@ Run:
 ## Create Scratch Org
 Run:
 
-      sfdx force:org:create -f config/project-scratch-def.json -a FirstScratch --durationdays 30 --setdefaultusername
+      sf org create scratch --definition-file config/project-scratch-def.json --no-namespace --duration-days 30 --alias MyScratchOrg --set-default --target-dev-hub ScratchOrg
  
  Successfully created scratch org: \<orgId\>, username: uname@example.com
 
  ## Open the Scratch Org
  Run:
  
-     sfdx force:org:open -u uname@example.com
+     sf org open -u uname@example.com
 
 ## Get password for the scratch Org
 Run:
 
-    sfdx force:user:password:generate --targetusername \<username\>
+    sf org generate password --target-org <username-or-alias>
 
  Successfully set the password "*********" for user \<username\>.
 
- You can see the password again by running `sfdx force:user:display -u \<username\>`
+ You can see the password again by running `sf org display user -o <username>`
